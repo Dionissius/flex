@@ -1,0 +1,170 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content{
+    margin: 2% auto;
+    margin-right: auto;
+    height: 300px;
+    background-color: gray;
+    border: solid 2px wheat;
+    opacity: 95%;
+    border-radius: 10px;
+    padding: 3% 2%;
+}
+.content:hover{
+    box-shadow: 0 0 5px whitesmoke;
+}
+.box{
+    border: dashed 1px rgb(165, 207, 250);
+    display: flex;
+    width: 150px;
+    padding: 2%;
+}
+
+.ex{
+    background-color: teal;
+    color: aliceblue;
+    border: solid 1px rgb(146, 184, 187);
+    text-align: center;
+    margin: 1%;
+    padding: 5%;
+    font-weight: 300;
+}
+.ex:hover{
+    position: relative;
+    top: -5px;
+}
+h3{
+    color: aliceblue;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.h3{
+    color: rgb(145, 60, 60);
+    font-size: larger;
+}
+#box1{
+    flex-direction: row;
+
+}
+#box2{
+    flex-direction: row-reverse;
+}
+#box3{
+    flex-direction: column;
+}
+#box4{
+    flex-direction: column-reverse;
+}
+#box5{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#box5 .ex{
+    width: 50px;
+}
+#box6{
+    flex-flow: row nowrap;
+}
+#box6 .ex{
+    width: 50px;
+}
+#box7{
+    flex-flow: row wrap;
+}
+#box7 .ex:first-child{
+    flex-grow: 2;
+}
+#box8 .ex:nth-child(2){
+    flex-grow: 2;
+}
+#box9{
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
+#box9 .ex:nth-child(odd){
+    flex-grow: 1;
+}
+#box9 .ex:nth-child(even){
+    flex-shrink: 2; 
+}
+#box10{
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100px;
+}
+#box11{
+    flex-direction: row;
+    align-items: flex-end;
+    height: 100px;
+}
+#box12{
+    flex-direction: row;
+    align-items: stretch;
+    height: 100px;
+}
+#box13{
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+}
+#box14{
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+}
+#box15{
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100px;
+}
+#box16{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+#box17{
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+#box18{
+    flex-direction: row;
+    justify-content: space-between;
+}
+#box19{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#content2{
+    padding-top: 0px;
+    height: fit-content;
+    
+}
+#content2 #box20{
+    align-self: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100px;
+}
+#box20 .ex:nth-child(1){
+    align-self: flex-end;
+}
+#box20 .ex:nth-child(2){
+    align-self: center;
+}
+#box20 .ex:nth-child(4){
+    align-self: center;
+}
+#box20 .ex:nth-child(5){
+    align-self: flex-end;
+}
+
