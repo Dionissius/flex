@@ -1,13 +1,18 @@
 html{
     background: url(./images/Паттерн\ диван.jpg);
     font-family: 'Kanit', sans-serif;
+    position: relative;
+    min-width: fit-content;
 }
 body{
     margin: 0 10% 0 10%;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
 }
 .navmenu{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: rgb(119, 63, 23);
     border-radius: 15px;
     padding: 10px;
@@ -15,6 +20,9 @@ body{
     box-shadow: 0 0 10px gold;
     opacity: 90%;
     margin-bottom: 2%;
+    min-width: fit-content;
+    align-items: center;
+    justify-content: center;
 }
 .navbutt{
     height: 50px;
@@ -51,4 +59,8 @@ a{
 h1 {
     color: white;
     text-align: center;
+}
+
+button {
+    min-width: fit-content;
 }
